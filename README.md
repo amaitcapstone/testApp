@@ -63,3 +63,6 @@ This can take some time, depending on your project size. You can now try to open
 > heroku open
 
 This should open your browser at some Heroku generated link. For me, there was no app just an error message, not what I expected. But no worries, this is most of the time because you have not assigned any dynos. Therefore, go to your Heroku Dashboard and click on your generated app. If you see 0x dynos, click on edit and pull the slider to 1x.
+
+# URL
+https://pacific-thicket-47915.herokuapp.com/
