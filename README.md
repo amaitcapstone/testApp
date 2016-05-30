@@ -20,7 +20,9 @@ In order to deploy your app, you need to have your project in a git repository. 
 Heroku can run your app in many environments, for our ionic app we need a NodeJS environment.
 > npm install express --save
 
-# app.json is needed for some meta information about your app.
+# app.json 
+is needed for some meta information about your app.
+
 {
     "name": "amaitcapstone Ionic to Heroku Example",
     "description": "A simple Ionic app for Heroku",
@@ -29,7 +31,8 @@ Heroku can run your app in many environments, for our ionic app we need a NodeJS
     "keywords": ["ionic", "amait", "capstone"]
 }
 
-# The last thing we need is the file which will be executed by Heroku.
+# server.js
+The last thing we need is the file which will be executed by Heroku.
 Heroku will look for a server.js, so create this file as well on the top level of your ionic project and insert:
 
 var express = require('express'),
