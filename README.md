@@ -41,4 +41,12 @@ app.listen(app.get('port'), function () {
 
 # Now you can test your app local. Instead of ‘ionic serve’, we will install the modules and run it with our express server, so go ahead:
 > npm install
+
 > npm start
+
+# Update complete local repo
+> git add .
+
+> git commit -am "Commit Message"
+
+> git push -u origin master
