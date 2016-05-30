@@ -1,0 +1,7 @@
+{
+    "name": "amaitcapstone Ionic to Heroku Example",
+    "description": "A simple Ionic app for Heroku",
+    "repository": "https://github.com/amaitcapstone/testApp.git",
+    "logo": "http://pathToYourLogo.png",
+    "keywords": ["ionic", "amait", "capstone"]
+}
