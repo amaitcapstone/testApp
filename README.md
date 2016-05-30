@@ -10,7 +10,7 @@ In order to deploy your app, you need to have your project in a git repository. 
 > git commit -am 'Initial commit.'
 
 # Pull other default files in github
-> git remote add origin [github url here]
+> git remote add origin [https://github url here]
 
 > git pull origin master
 
