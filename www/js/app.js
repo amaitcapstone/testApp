@@ -49,7 +49,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   })
-
+  .state('tab.topic-detail', {
+      url: '/dash/:topicId',
+      views: {
+        'tab-dash': {
+          templateUrl: 'templates/topic-detail.html',
+          controller: 'TopicDetailCtrl'
+        }
+      }
+    })
   .state('tab.chats', {
       url: '/chats',
       views: {
@@ -68,6 +76,46 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     })
+
+  .state('tab.games', {
+      url: '/games',
+      views: {
+        'tab-games': {
+          templateUrl: 'templates/tab-games.html',
+          controller: 'GamesCtrl'
+        }
+      }
+    })
+
+    .state('tab.game-detail', {
+      url: '/games/:gameId',
+      views: {
+        'tab-games': {
+          templateUrl: 'templates/game-detail.html',
+          controller: 'GameDetailCtrl'
+        }
+      }
+    })
+
+    .state('tab.quiz', {
+      url: '/quiz',
+      views: {
+        'tab-quiz': {
+          templateUrl: 'templates/tab-quiz.html',
+          controller: 'QuizCtrl'
+        }
+      }
+    })
+
+    .state('tab.quiz-detail', {
+      url: '/quiz/:quizId',
+      views: {
+        'tab-quiz': {
+          templateUrl: 'templates/quiz-detail.html',
+          controller: 'QuizDetailCtrl'
+        }
+      }
+    })    
 
   .state('tab.account', {
     url: '/account',

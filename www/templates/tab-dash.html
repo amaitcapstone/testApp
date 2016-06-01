@@ -1,13 +1,37 @@
-<ion-view view-title="Dashboard">
-  <ion-content class="padding">
-    <h2>Welcome to testApp</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
+<ion-view view-title="E-Learning">
+  <ion-content>
+  
+
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="topic in topics" type="item-text-wrap" href="#/tab/dash/{{topic.id}}">
+        <img ng-src="{{topic.image}}">
+        <h2>{{topic.title}}</h2>
+        <p>{{topic.subtitle}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+    </ion-list>  
+  <!-- <div class="list">
+
+    <a class="item item-thumbnail-left" href="#">
+      <img src="img/msword.jpg">
+      <h2>Microsoft Word</h2>
+      <p>Word Document Processor</p>
+    </a>
+
+    <a class="item item-thumbnail-left" href="#">
+      <img src="cover.jpg">
+      <h2>Microsoft Excel</h2>
+      <p>Spreadsheet Program</p>
+    </a>
+
+    <a class="item item-thumbnail-left" href="#">
+      <img src="cover.jpg">
+      <h2>Microsoft PowerPoint</h2>
+      <p>Presentation Program</p>
+    </a>    
+
+  </div> -->
+
   </ion-content>
+
 </ion-view>
